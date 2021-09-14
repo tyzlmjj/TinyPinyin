@@ -1,10 +1,18 @@
 # TinyPinyin
 
- [![Build Status](https://travis-ci.org/promeG/TinyPinyin.svg?branch=master)](https://travis-ci.org/promeG/TinyPinyin)
+只做整理并发布至中央库
 
 适用于Java和Android的快速、低内存占用的汉字转拼音库。
 
 当前稳定版本：2.0.3
+
+### 添加到工程
+
+```groovy
+
+implementation 'me.majiajie:tinypinyin:2.0.3'
+
+```
 
 ## 特性
 
@@ -60,23 +68,6 @@ Pinyin.init(Pinyin.newConfig()
             }));
 ```
 
-### 添加到工程
-
-```groovy
-buildscript {
-  repositories {
-    jcenter()
-  }
-
-  dependencies {
-    compile 'com.github.promeg:tinypinyin:2.0.3' // TinyPinyin核心包，约80KB
-
-    compile 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3' // 可选，适用于Android的中国地区词典
-
-    compile 'com.github.promeg:tinypinyin-lexicons-java-cncity:2.0.3' // 可选，适用于Java的中国地区词典
-  }
-}
-```
 
 ## 详细说明
 
@@ -158,9 +149,3 @@ Pinyin4j_IsChinese（Pinyin4j的字符是否为汉字） | thrpt | 200 | 4.432 |
 
 使用‘com.github.promeg:tinypinyin-lexicons-java-cncity:2.0.0’时，额外消耗约43KB内存。
 
-## Todo
-
-+ ~~支持繁体中文~~
-+ 支持姓氏拼音
-+ 压缩词库
-+ 词库生成工具
